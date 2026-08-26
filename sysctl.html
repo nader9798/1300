@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohamed Gaber PS4 13.00</title>
+</style>
+<style>
+  html, body {background-image: url("ps4.png");
+    background-repeat: no-repeat;
+        background-size: 100٪ 100٪; /
+   }
+  #wrap { padding:16px 18px; }
+  #state { font-size:22px; font-weight:700; margin:0 0 4px; }
+  .sub { color:#61708a; font-size:13px; margin:0 0 10px; }
+  #out { white-space:pre-wrap; font:12px/1.45 Consolas, monospace;
+         background:#11151b; border:1px solid #1e2732; border-radius:5px;
+         padding:10px 12px; height:calc(50vh - 50px); overflow-y:auto; }
+  .ok { color:#7fd0a0; } .bad { color:#d08a7f; } .warn { color:#d8c07f; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="state">تحميل...</div>
+  <p class="sub"><b>DRY.</b> WebKit الأساسي واستدعاءات النظام فقط &mdash; لا يوجد نظام إدخال/إخراج متكامل،
+
+لا يوجد تحكم بالشبكة، لا يوجد تحرير مزدوج، لا يوجد شيء مُفعّل. يقرأ أوامر النظام ويضع
+     <code>Math.expm1</code> العودة. آمن للاستخدام كلما رغبت؛ لا حاجة لإعادة التشغيل..</p>
+  <div id="out"></div>
+</div>
+<script type="module">import "./sysctl.js";</script>
+</body>
+</html>
